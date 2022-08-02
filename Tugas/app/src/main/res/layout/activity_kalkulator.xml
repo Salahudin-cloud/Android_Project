@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kalkulator"
+    >
+
+
+    <EditText
+        android:id="@+id/inputAngkaPertama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="18"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:hint="Masukan Angka Pertama"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/inputAngkaKedua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="18"
+        android:inputType="number"
+        android:hint="Masukan Angka Kedua"
+        app:layout_constraintTop_toBottomOf="@id/inputAngkaPertama"
+        app:layout_constraintRight_toRightOf="@id/inputAngkaPertama"
+        app:layout_constraintLeft_toLeftOf="@id/inputAngkaPertama"
+        />
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:text="+"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/inputAngkaKedua"
+        app:layout_constraintLeft_toLeftOf="@id/inputAngkaKedua"
+        />
+
+    <Button
+        android:id="@+id/buttonSubtraction"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="90dp"
+        app:layout_constraintTop_toBottomOf="@id/inputAngkaKedua"
+        app:layout_constraintLeft_toLeftOf="@id/inputAngkaKedua"
+         />
+
+    <Button
+        android:id="@+id/buttonMultiple"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginRight="90dp"
+        app:layout_constraintTop_toBottomOf="@id/inputAngkaKedua"
+        app:layout_constraintRight_toRightOf="@id/inputAngkaKedua"
+        />
+
+    <Button
+        android:id="@+id/buttonDivine"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:text="/"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/inputAngkaKedua"
+        app:layout_constraintRight_toRightOf="@id/inputAngkaKedua"
+         />
+
+    <Button
+        android:id="@+id/buttonClean"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:text="Bersihkan"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/labelHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/noto_sans_bold"
+        app:layout_constraintTop_toBottomOf="@id/buttonClean"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/labelHasil"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

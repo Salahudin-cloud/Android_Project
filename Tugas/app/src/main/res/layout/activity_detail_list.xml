@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail_List"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/flag"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/namaNegara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/flag"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ibuKotaNegara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintTop_toBottomOf="@id/namaNegara"
+        app:layout_constraintStart_toEndOf="@id/flag"
+        />
+
+    <TextView
+        android:id="@+id/bahasaResmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="9dp"
+        android:text="Bahasa Resmi : Indonesia"
+        app:layout_constraintStart_toEndOf="@id/flag"
+        app:layout_constraintTop_toBottomOf="@id/ibuKotaNegara"
+        />
+
+    <TextView
+        android:id="@+id/luas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="9dp"
+        android:text="Luas : 1.904.570 km2"
+        app:layout_constraintTop_toBottomOf="@id/bahasaResmi"
+        app:layout_constraintStart_toEndOf="@id/flag"
+        />
+
+    <TextView
+        android:id="@+id/populasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="9dp"
+        android:text="Populasi : 275,273,774 "
+        app:layout_constraintTop_toBottomOf="@id/luas"
+        app:layout_constraintStart_toEndOf="@id/flag"
+
+        />
+
+    <TextView
+        android:id="@+id/ideologi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="9dp"
+        android:text="Ideologi : Pancasila"
+        app:layout_constraintStart_toEndOf="@id/flag"
+        app:layout_constraintTop_toBottomOf="@id/populasi"
+
+        />
+
+    <TextView
+        android:id="@+id/kodeTelepon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:layout_marginLeft="9dp"
+        android:text="Kode Telepon : +62"
+        app:layout_constraintStart_toEndOf="@id/flag"
+        app:layout_constraintTop_toBottomOf="@id/ideologi"
+        />
+
+    <TextView
+        android:id="@+id/deskripsiSingkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deskripsi Singkat : "
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/flag"
+        app:layout_constraintLeft_toLeftOf="@id/flag"
+        />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/veryLongText"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintLeft_toLeftOf="@id/flag"
+        app:layout_constraintTop_toBottomOf="@id/deskripsiSingkat"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
